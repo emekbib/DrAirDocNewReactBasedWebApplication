@@ -1,0 +1,105 @@
+.infoSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.infoCard {
+  background: white;
+  border-radius: 20px;
+  padding: 1.75rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.infoCard.featured {
+  background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+  border: 2px solid #667eea;
+  box-shadow: 0 10px 40px rgba(102, 126, 234, 0.2);
+}
+
+.infoCard h3 {
+  color: #1f2937;
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  line-height: 1.4;
+}
+
+.cardIcon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.infoCard p {
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
+
+.infoCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.infoCard ul li {
+  padding: 0.55rem 0;
+  color: #374151;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.infoCard ul li:last-child { border-bottom: none; }
+
+.hoursList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.hourItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  border-left: 3px solid #667eea;
+}
+
+.hourItem strong {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.hourItem span {
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.closed {
+  color: #ef4444 !important;
+  font-weight: 600 !important;
+}
+
+@media (max-width: 768px) {
+  .infoCard { padding: 1.5rem; }
+}

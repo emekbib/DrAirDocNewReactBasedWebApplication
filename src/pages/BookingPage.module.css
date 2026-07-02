@@ -1,0 +1,41 @@
+.bookingContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 25%, #7e22ce 75%, #9333ea 100%);
+}
+
+.bookingContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2rem;
+  align-items: start;
+  padding: 3rem 1rem;
+}
+
+@media (max-width: 968px) {
+  .bookingContent {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.pageFooter {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+}
+
+.adminLink {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.75rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  letter-spacing: 0.5px;
+}
+
+.adminLink:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
