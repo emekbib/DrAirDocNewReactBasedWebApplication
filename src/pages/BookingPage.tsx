@@ -21,7 +21,8 @@ export default function BookingPage() {
               preload="metadata"
               className={styles.video}
             >
-              <source src="/8C9E06E0-486A-4764-9839-5CE3594D5530.mov" type="video/mp4" />
+              <source src="/8C9E06E0-486A-4764-9839-5CE3594D5530.mov" type="video/quicktime" />
+              <source src="/8C9E06E0-486A-4764-9839-5CE3594D5530.mov" />
               Your browser does not support the video tag.
             </video>
           </div>
